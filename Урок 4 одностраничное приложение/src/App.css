@@ -1,0 +1,49 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: show 1s linear;
+}
+
+.modal {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  border: 2px solid black;
+  animation: showModal 1s linear;
+}
+
+.list-of-users{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.list-of-users li a{
+  border: 2px solid black;
+  padding: 20px;
+  display: block;
+}
+
+.active{
+  color: red;
+}
