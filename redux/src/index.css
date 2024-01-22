@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  animation: appear 0.5s 1 linear;
+}
+
+@keyframes appear {
+  from{
+    transform: translate(50px,50px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  overflow-x: hidden;
+}
+
+a{
+  color: inherit;
+  font-family:inherit;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
