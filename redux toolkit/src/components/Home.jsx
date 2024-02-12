@@ -5,7 +5,7 @@ import { fetchAddBagData } from "../redux/getUsersData";
 import Spinner from 'react-bootstrap/Spinner';
 
 function Home() {
-  let usersArray = useSelector((state) => state.goods.goods)
+  let goods = useSelector((state) => state.goods.goods)
   let loading = useSelector((state) => state.goods.isLoading)
   let error = useSelector((state) => state.goods.error)
 
