@@ -35,7 +35,7 @@ const goodsSlice = createSlice({
           state.isLoading = true
         })
         builder.addCase(fetchContent.fulfilled, (state, action) => {
-          state.usersArray = action.payload
+          state.goods = action.payload
           state.isLoading = false
         })
         builder.addCase(fetchContent.rejected, (state, action) => {
