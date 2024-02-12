@@ -16,7 +16,7 @@ function Admin() {
 
 
   let dispatch = useDispatch()
-  let usersArray = useSelector((state) => state.goods.usersArray)
+  let goods = useSelector((state) => state.goods.goods)
   let addingInfo = useSelector((state) => state.goods.addingInfo)
   let deleting = useSelector((state) => state.goods.deletingInfo)
   let loading = useSelector((state) => state.goods.isLoading)
@@ -70,7 +70,7 @@ function Admin() {
 
 
       <ul className="goods">
-        {usersArray.map((item) => {
+        {goods.map((item) => {
           return (
             <li key={item.id}>
               <p>{item.product_name}</p>
